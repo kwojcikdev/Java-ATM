@@ -1,0 +1,6 @@
+public class User {
+    private String firstName;
+    private String lastName;
+    private String uuid;
+    private byte pinHash[];
+}
