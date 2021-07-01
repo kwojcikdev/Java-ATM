@@ -39,6 +39,11 @@ public class User {
 
     public void addAccount(Account account)
     {
+        this.accounts.add(account);
+        System.out.println("Added account: " + account);
+    }
 
+    public String getUUID(){
+        return this.uuid;
     }
 }

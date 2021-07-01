@@ -8,4 +8,20 @@ public class Transaction {
     private Account account;
 
 
+    public Transaction(double amount, Account account)
+    {
+        this.amount = amount;
+        this.account = account;
+        this.description = "";
+
+        this.timestamp = new Date();
+
+    }
+
+    public Transaction(double amount, Account account, String description)
+    {
+        this(amount, account);
+
+        this.description = description;
+    }
 }

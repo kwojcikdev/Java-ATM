@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Account {
 
     private String name;
-    private double balance;
     private String uuid;
     private User user;
     private ArrayList<Transaction> transactions;
@@ -18,7 +17,12 @@ public class Account {
 
         this.transactions = new ArrayList<Transaction>();
 
-        user.addAccount(this);
-        bank.addAccount(this);
+
     }
+
+    public String getUUID(){
+        return this.uuid;
+    }
+
+
 }
